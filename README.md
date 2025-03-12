@@ -1,3 +1,12 @@
+# Create a resource group
+az group create --location eastus2 --name demoRG
+
+# Create an app service plan of type Linux
+az appservice plan create -g demoRG -n myapp-service-plan --is-linux
+
+# Create an App Service from the plan with Tomcat and JRE 8 as the runtime
+az webapp create -g demoRG -p myapp-service-plan -n demoapps1203 --runtime "TOMCAT|8.5-jre8"
+
 
 # Contributing
 
