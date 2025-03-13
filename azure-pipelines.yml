@@ -28,6 +28,6 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: 'default'
     jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
+    publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
